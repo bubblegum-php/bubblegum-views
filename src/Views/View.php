@@ -1,5 +1,6 @@
 <?php
 
+namespace Bubblegum\Views;
 
 use Bubblegum\Request;
 use Bubblegum\Routes\RoutedComponent;
