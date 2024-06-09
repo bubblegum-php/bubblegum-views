@@ -1,0 +1,31 @@
+{
+    "name": "bubblegum-php/bubblegum-views",
+    "description": "Views module for BUBBLEGUM.",
+    "keywords": ["bubblegum", "bubblegum-views", "views"],
+    "homepage": "https://github.com/bubblegum-php/bubblegum-views",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LankryF",
+            "email": "lankrf@gmail.com"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/bubblegum-php/bubblegum-views"
+    },
+    "require": {
+        "php": "^8.0",
+        "bubblegum-php/bubblegum-core": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bubblegum\\": "src/"
+        }
+    },
+    "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/bubblegum-php/bubblegum-core.git"
+    }
+  ]
+}
