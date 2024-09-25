@@ -8,7 +8,8 @@ use Bubblegum\Routes\RoutedComponent;
 class View extends RoutedComponent
 {
     protected static string $path = ROOT_PATH . 'app/Views/';
-    function content(Request $request, array $data = []): string
+
+    function handle(Request $request, array $data = []): string
     {
         $path = self::$path.str_replace('.', DIRECTORY_SEPARATOR, $this->destinationName).'.php';
         return self::getContentFromFile($path, $request, $data);
