@@ -7,7 +7,18 @@ use Bubblegum\Routes\RoutedComponent;
 
 class View extends RoutedComponent
 {
+    protected string $destinationName;
     protected static string $path = ROOT_PATH . 'app/Views/';
+
+    public function setDestinationName($destinationName)
+    {
+        $this->destinationName = $destinationName;
+    }
+
+    public function getDestinationName(): string
+    {
+        return $this->destinationName;
+    }
 
     function handle(Request $request, array $data = []): string
     {
